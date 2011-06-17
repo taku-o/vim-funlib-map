@@ -8,20 +8,6 @@ let s:keepcpo = &cpo
 set cpo&vim
 " ---------------------------------------------------------------------
 
-function s:Base64Encode()
-    let l:line = getline('.')
-    let l:encoded = base64#b64encode(l:line)
-    call setline('.', l:encoded)
-endfunction
-
-function s:Base64Decode()
-    let l:line = getline('.')
-    let l:encoded = base64#b64decode(l:line)
-    call setline('.', l:encoded)
-endfunction
-command! -nargs=0 -range Base64Encode :<line1>,<line2>call <SID>Base64Encode()
-command! -nargs=0 -range Base64Decode :<line1>,<line2>call <SID>Base64Decode()
-
 function! Random(a, b)
     return random#randint(a:a, a:b)
 endfunction

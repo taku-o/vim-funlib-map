@@ -1,12 +1,6 @@
-command and mapping using vim-funlib(https://github.com/ynkdir/vim-funlib) library.
+function using vim-funlib(https://github.com/ynkdir/vim-funlib) library.
 
 vim-funlib-map define.
-
-command.
-    :[range]Base64Encode
-            base64encode selected area.
-    :[range]Base64Decode
-            base64decode selected area.
 
 function.
     Random(from, to)
