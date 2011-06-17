@@ -1,2 +1,25 @@
 command and mapping using vim-funlib(https://github.com/ynkdir/vim-funlib) library.
 
+vim-funlib-map define.
+
+command.
+    :[range]Base64Encode
+            base64encode selected area.
+    :[range]Base64Decode
+            base64decode selected area.
+
+function.
+    Random(from, to)
+            generate random integer.
+
+    MD5(data)
+            generate md5 string.
+
+    Sha1(data)
+            generate sha1 string.
+
+    Sha256(data)
+            generate sha256 string.
+
+
+
